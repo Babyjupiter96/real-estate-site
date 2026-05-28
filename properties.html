@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listings | Meridian Realty</title>
+  <meta name="description" content="Browse all available properties — single family homes, condos, townhouses, and investment properties in Austin, TX." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="nav-header scrolled" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" style="color:var(--navy)">
+        <span class="logo-icon">M</span>
+        <span>Meridian <strong>Realty</strong></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="properties.html" class="active">Listings</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#book" class="btn btn-sm btn-gold">Book a Call</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Current Inventory</p>
+      <h1>Available Properties</h1>
+      <p>Explore our curated selection of homes across Austin and surrounding communities.</p>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters-bar">
+    <div class="container filters-inner">
+      <span class="filter-label">Filter by:</span>
+      <select class="filter-select" id="filterType">
+        <option value="">All Types</option>
+        <option>Single Family</option>
+        <option>Condo</option>
+        <option>Townhouse</option>
+        <option>Multi-Family</option>
+      </select>
+      <select class="filter-select" id="filterPrice">
+        <option value="">Any Price</option>
+        <option>Under $500K</option>
+        <option>$500K – $1M</option>
+        <option>$1M – $2M</option>
+        <option>$2M+</option>
+      </select>
+      <select class="filter-select" id="filterBeds">
+        <option value="">Any Beds</option>
+        <option>1–2 Beds</option>
+        <option>3 Beds</option>
+        <option>4 Beds</option>
+        <option>5+ Beds</option>
+      </select>
+      <select class="filter-select" id="filterArea">
+        <option value="">All Areas</option>
+        <option>Austin</option>
+        <option>Round Rock</option>
+        <option>Cedar Park</option>
+        <option>Westlake Hills</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- LISTINGS -->
+  <section class="listings-section">
+    <div class="container">
+      <div class="listings-header">
+        <p class="listings-count">Showing <strong>9</strong> properties</p>
+        <select class="sort-select">
+          <option>Sort: Newest First</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Most Popular</option>
+        </select>
+      </div>
+
+      <div class="properties-grid-4" id="listingsGrid">
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80')">
+            <span class="tag tag-new">New</span>
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$1,295,000</div>
+            <h3 class="property-name">4240 Lakewood Drive</h3>
+            <p class="property-loc">📍 Austin, TX 78746</p>
+            <div class="property-meta">
+              <span>🛏 5 Beds</span><span>🛁 4 Baths</span><span>📐 3,800 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80')">
+            <span class="tag tag-hot">Hot</span>
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$874,000</div>
+            <h3 class="property-name">7 Hillcrest Court</h3>
+            <p class="property-loc">📍 Austin, TX 78703</p>
+            <div class="property-meta">
+              <span>🛏 4 Beds</span><span>🛁 3 Baths</span><span>📐 2,600 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80')">
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$645,000</div>
+            <h3 class="property-name">312 Maplebrook Lane</h3>
+            <p class="property-loc">📍 Round Rock, TX 78664</p>
+            <div class="property-meta">
+              <span>🛏 3 Beds</span><span>🛁 2 Baths</span><span>📐 2,100 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80')">
+            <span class="tag tag-new">New</span>
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$2,150,000</div>
+            <h3 class="property-name">901 Barton Skyline</h3>
+            <p class="property-loc">📍 Westlake Hills, TX 78746</p>
+            <div class="property-meta">
+              <span>🛏 6 Beds</span><span>🛁 5 Baths</span><span>📐 5,200 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80')">
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$489,000</div>
+            <h3 class="property-name">55 Creekside Place #4B</h3>
+            <p class="property-loc">📍 Cedar Park, TX 78613</p>
+            <div class="property-meta">
+              <span>🛏 2 Beds</span><span>🛁 2 Baths</span><span>📐 1,350 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80')">
+            <span class="tag tag-hot">Hot</span>
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$779,500</div>
+            <h3 class="property-name">18 Ridgemont Blvd</h3>
+            <p class="property-loc">📍 Austin, TX 78757</p>
+            <div class="property-meta">
+              <span>🛏 4 Beds</span><span>🛁 3 Baths</span><span>📐 2,850 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1602941525421-8f8b81d3edbb?w=800&q=80')">
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$1,025,000</div>
+            <h3 class="property-name">224 Cliffview Terrace</h3>
+            <p class="property-loc">📍 Austin, TX 78731</p>
+            <div class="property-meta">
+              <span>🛏 5 Beds</span><span>🛁 4 Baths</span><span>📐 3,200 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80')">
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$558,000</div>
+            <h3 class="property-name">8 Sunridge Way</h3>
+            <p class="property-loc">📍 Round Rock, TX 78681</p>
+            <div class="property-meta">
+              <span>🛏 3 Beds</span><span>🛁 2 Baths</span><span>📐 1,900 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80')">
+            <span class="tag tag-new">New</span>
+            <button class="fav-btn">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$695,000</div>
+            <h3 class="property-name">1103 Magnolia Springs</h3>
+            <p class="property-loc">📍 Cedar Park, TX 78613</p>
+            <div class="property-meta">
+              <span>🛏 4 Beds</span><span>🛁 3 Baths</span><span>📐 2,400 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <div style="display:flex;justify-content:center;gap:8px;margin-top:48px;">
+        <button class="btn btn-gold btn-sm">1</button>
+        <button class="btn btn-outline btn-sm">2</button>
+        <button class="btn btn-outline btn-sm">3</button>
+        <button class="btn btn-outline btn-sm">Next →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section" style="background:var(--navy);padding:64px 0;">
+    <div class="container" style="text-align:center;">
+      <h2 style="color:var(--white);margin-bottom:12px;">Don't See What You're Looking For?</h2>
+      <p style="color:rgba(255,255,255,.65);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;">
+        We have off-market listings and coming-soon properties. Tell us what you need.
+      </p>
+      <a href="contact.html" class="btn btn-gold btn-lg">Talk to an Agent</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light"><span class="logo-icon">M</span><span>Meridian <strong>Realty</strong></span></a>
+        <p>Your trusted partner in Austin real estate since 2013.</p>
+      </div>
+      <div class="footer-links"><h4>Quick Links</h4><a href="index.html">Home</a><a href="properties.html">Listings</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h4>Services</h4><a href="#">Buy a Home</a><a href="#">Sell a Home</a><a href="#">Investment</a><a href="#">Market Reports</a></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:+15125550182">(512) 555-0182</a></p><p>✉️ <a href="mailto:hello@meridianrealty.com">hello@meridianrealty.com</a></p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Meridian Realty. All rights reserved.</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

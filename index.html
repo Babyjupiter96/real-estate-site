@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian Realty | Find Your Dream Home</title>
+  <meta name="description" content="Meridian Realty helps you buy, sell, and invest in premium real estate. Trusted agents, exclusive listings, and concierge service." />
+
+  <!-- Google Analytics placeholder -->
+  <!-- Replace G-XXXXXXXXXX with your real GA4 measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header class="nav-header" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">M</span>
+        <span>Meridian <strong>Realty</strong></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="properties.html">Listings</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#book" class="btn btn-sm">Book a Call</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Premium Real Estate</p>
+      <h1 class="hero-title">Find the Home<br/>You've Always Imagined</h1>
+      <p class="hero-sub">From first-time buyers to seasoned investors — we guide every client to their perfect property.</p>
+
+      <!-- Search bar -->
+      <form class="search-bar" id="heroSearch" action="properties.html" method="get">
+        <div class="search-fields">
+          <div class="search-field">
+            <label>Location</label>
+            <input type="text" name="location" placeholder="City, ZIP, or neighborhood" />
+          </div>
+          <div class="search-divider"></div>
+          <div class="search-field">
+            <label>Property Type</label>
+            <select name="type">
+              <option value="">Any Type</option>
+              <option>Single Family</option>
+              <option>Condo</option>
+              <option>Townhouse</option>
+              <option>Multi-Family</option>
+              <option>Land</option>
+            </select>
+          </div>
+          <div class="search-divider"></div>
+          <div class="search-field">
+            <label>Price Range</label>
+            <select name="price">
+              <option value="">Any Price</option>
+              <option>Under $500K</option>
+              <option>$500K – $1M</option>
+              <option>$1M – $2M</option>
+              <option>$2M+</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-gold search-btn">Search Homes</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-number" data-target="850">0</span><span class="stat-suffix">+</span>
+        <p>Homes Sold</p>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="97">0</span><span class="stat-suffix">%</span>
+        <p>Client Satisfaction</p>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="14">0</span><span class="stat-suffix"> days</span>
+        <p>Avg. Days on Market</p>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="12">0</span><span class="stat-suffix"> yrs</span>
+        <p>Local Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED LISTINGS ── -->
+  <section class="section featured">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Exclusive Listings</p>
+        <h2>Featured Properties</h2>
+        <p class="section-sub">Hand-picked homes from across the region — updated weekly.</p>
+      </div>
+
+      <div class="properties-grid">
+
+        <article class="property-card featured-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80')">
+            <span class="tag tag-new">New</span>
+            <button class="fav-btn" aria-label="Save property">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$1,295,000</div>
+            <h3 class="property-name">4240 Lakewood Drive</h3>
+            <p class="property-loc">📍 Austin, TX 78746</p>
+            <div class="property-meta">
+              <span>🛏 5 Beds</span>
+              <span>🛁 4 Baths</span>
+              <span>📐 3,800 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80')">
+            <span class="tag tag-hot">Hot</span>
+            <button class="fav-btn" aria-label="Save property">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$874,000</div>
+            <h3 class="property-name">7 Hillcrest Court</h3>
+            <p class="property-loc">📍 Austin, TX 78703</p>
+            <div class="property-meta">
+              <span>🛏 4 Beds</span>
+              <span>🛁 3 Baths</span>
+              <span>📐 2,600 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80')">
+            <button class="fav-btn" aria-label="Save property">♡</button>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$645,000</div>
+            <h3 class="property-name">312 Maplebrook Lane</h3>
+            <p class="property-loc">📍 Round Rock, TX 78664</p>
+            <div class="property-meta">
+              <span>🛏 3 Beds</span>
+              <span>🛁 2 Baths</span>
+              <span>📐 2,100 sqft</span>
+            </div>
+            <a href="contact.html#book" class="btn btn-outline btn-sm">Schedule Tour</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="text-center mt-lg">
+        <a href="properties.html" class="btn btn-gold">View All Listings →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section class="section how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Simple Process</p>
+        <h2>How We Work With You</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-icon">01</div>
+          <h3>Free Consultation</h3>
+          <p>Book a no-pressure call. We learn your goals, timeline, and budget.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-icon">02</div>
+          <h3>Curated Matches</h3>
+          <p>We send you hand-picked listings — no scrolling through hundreds of homes.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-icon">03</div>
+          <h3>Tour & Offer</h3>
+          <p>We tour together, negotiate hard, and handle all the paperwork.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-icon">04</div>
+          <h3>Close &amp; Celebrate</h3>
+          <p>Keys in hand. We're with you through closing and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Client Stories</p>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Meridian found us our dream home in 3 weeks. The process was seamless and we felt supported every step of the way."</p>
+          <footer><strong>Sarah & Marcus T.</strong> — Bought in Westlake Hills</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"We listed on a Thursday and had multiple offers by Monday. Sold for $45K over asking. Incredible team."</p>
+          <footer><strong>David K.</strong> — Sold in 78703</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"As a first-time buyer, I was nervous. They walked me through everything patiently. Couldn't recommend them more."</p>
+          <footer><strong>Priya N.</strong> — Bought in Round Rock</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LEAD MAGNET / CTA ── -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-text">
+          <p class="eyebrow" style="color:#c9a84c">Free Market Report</p>
+          <h2>What's Your Home Worth?</h2>
+          <p>Get a free, no-obligation home valuation delivered to your inbox within 24 hours.</p>
+        </div>
+        <form class="cta-form" id="valuationForm">
+          <input type="text" placeholder="Property Address" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="tel" placeholder="Phone (optional)" />
+          <button type="submit" class="btn btn-gold">Get Free Valuation</button>
+          <p class="form-note">No spam, ever. We respect your privacy.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-icon">M</span>
+          <span>Meridian <strong>Realty</strong></span>
+        </a>
+        <p>Your trusted partner in Austin real estate since 2013.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="LinkedIn">li</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="properties.html">Listings</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <a href="#">Buy a Home</a>
+        <a href="#">Sell a Home</a>
+        <a href="#">Investment Properties</a>
+        <a href="#">Market Reports</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p>📞 <a href="tel:+15125550182">(512) 555-0182</a></p>
+        <p>✉️ <a href="mailto:hello@meridianrealty.com">hello@meridianrealty.com</a></p>
+        <p>📍 2401 Lake Austin Blvd<br/>Austin, TX 78703</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Meridian Realty. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

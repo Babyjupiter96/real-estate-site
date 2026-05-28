@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Meridian Realty</title>
+  <meta name="description" content="Get in touch with Meridian Realty — book a free consultation, ask about a listing, or request a home valuation." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="nav-header scrolled" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" style="color:var(--navy)">
+        <span class="logo-icon">M</span>
+        <span>Meridian <strong>Realty</strong></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="properties.html">Listings</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html#book" class="btn btn-sm btn-gold">Book a Call</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Get in Touch</p>
+      <h1>Let's Talk Real Estate</h1>
+      <p>Whether you're buying, selling, or just exploring — we'd love to hear from you.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-card">
+          <h2>Send Us a Message</h2>
+          <p class="sub">We respond within 1 business day — usually much sooner.</p>
+
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Smith" required />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="jane@email.com" required />
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="(512) 000-0000" />
+              </div>
+              <div class="form-group full">
+                <label>I'm interested in…</label>
+                <select>
+                  <option>Buying a Home</option>
+                  <option>Selling a Home</option>
+                  <option>Investment Property</option>
+                  <option>Home Valuation</option>
+                  <option>Just Exploring</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label>Message</label>
+                <textarea placeholder="Tell us a bit about what you're looking for — location, budget, timeline…"></textarea>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-gold btn-lg">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- INFO + BOOKING -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="contact-info-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+15125550182">(512) 555-0182</a>
+              <p style="font-size:.8rem;color:var(--gray-500);margin-top:2px;">Mon–Fri 8am–7pm · Sat 9am–5pm</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hello@meridianrealty.com">hello@meridianrealty.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Office</h4>
+              <p>2401 Lake Austin Blvd<br/>Austin, TX 78703</p>
+            </div>
+          </div>
+
+          <!-- CALENDLY BOOKING -->
+          <div id="book" style="margin-top:40px;">
+            <h3 style="margin-bottom:8px;">Book a Free Consultation</h3>
+            <p style="font-size:.9rem;color:var(--gray-500);margin-bottom:20px;">
+              Pick a time that works for you — 30-minute video or phone call, no obligation.
+            </p>
+            <!-- Calendly inline widget -->
+            <!-- Replace the data-url with your own Calendly link -->
+            <div class="calendly-box">
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/meridianrealty/consultation?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=c9a84c"
+                style="min-width:100%;height:500px;"
+              ></div>
+              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP / OFFICE AREA -->
+  <section style="background:var(--gray-50);padding:80px 0;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:40px;">
+        <p class="eyebrow">Service Area</p>
+        <h2>We Know Austin Inside Out</h2>
+        <p class="section-sub">Covering Austin, Westlake, Round Rock, Cedar Park, and the surrounding Hill Country.</p>
+      </div>
+      <!-- Embedded Google Map placeholder — replace src with your embed URL -->
+      <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);height:400px;background:var(--gray-300);display:flex;align-items:center;justify-content:center;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220977.7491810573!2d-97.87649!3d30.307182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000"
+          width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Meridian Realty service area map">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container" style="max-width:760px;">
+      <div class="section-header">
+        <p class="eyebrow">Common Questions</p>
+        <h2>FAQs</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How much does it cost to work with Meridian Realty as a buyer?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>In most cases, buyer representation is free to you. The seller typically covers agent commissions. We'll explain the exact structure during your free consultation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How long does it take to buy a home in Austin?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>From search to keys, most buyers close within 45–90 days. In competitive markets, pre-approval and a clear strategy can speed things up significantly. Our average is 14 days on market once you find the right home.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you help me sell my home and buy a new one at the same time?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely — this is one of our specialties. We coordinate the timing of your sale and purchase to minimize the gap and stress. We also have lender partners who offer bridge financing when needed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you work with investors?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Our investment specialist Marcus Cole works exclusively with investors — from first-time landlords to seasoned portfolio builders. We analyze cash flow, cap rate, and appreciation potential for every deal.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light"><span class="logo-icon">M</span><span>Meridian <strong>Realty</strong></span></a>
+        <p>Your trusted partner in Austin real estate since 2013.</p>
+      </div>
+      <div class="footer-links"><h4>Quick Links</h4><a href="index.html">Home</a><a href="properties.html">Listings</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h4>Services</h4><a href="#">Buy a Home</a><a href="#">Sell a Home</a><a href="#">Investment</a><a href="#">Market Reports</a></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:+15125550182">(512) 555-0182</a></p><p>✉️ <a href="mailto:hello@meridianrealty.com">hello@meridianrealty.com</a></p><p>📍 2401 Lake Austin Blvd, Austin TX 78703</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Meridian Realty. All rights reserved.</p></div>
+  </footer>
+
+  <!-- FAQ styles + script inline for self-containment -->
+  <style>
+    .faq-list { border-top: 1px solid var(--gray-100); }
+    .faq-item { border-bottom: 1px solid var(--gray-100); }
+    .faq-question {
+      width: 100%; text-align: left; padding: 20px 0;
+      background: none; border: none; cursor: pointer;
+      font-size: 1rem; font-weight: 600; color: var(--text);
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    }
+    .faq-question:hover { color: var(--gold); }
+    .faq-icon { font-size: 1.4rem; font-weight: 300; flex-shrink: 0; transition: transform .25s; }
+    .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+    .faq-answer { display: none; padding: 0 0 20px; color: var(--gray-700); font-size: .95rem; }
+    .faq-question[aria-expanded="true"] + .faq-answer { display: block; }
+  </style>
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded','false'));
+        btn.setAttribute('aria-expanded', String(!expanded));
+      });
+    });
+  </script>
+</body>
+</html>
